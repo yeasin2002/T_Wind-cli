@@ -1,0 +1,23 @@
+{
+  "name": "tail-commander-cli",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "fs-extra": "^11.1.1",
+    "inquirer": "^9.1.5",
+    "nodemon": "^2.0.22",
+    "yargs": "^17.7.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  }
+}
