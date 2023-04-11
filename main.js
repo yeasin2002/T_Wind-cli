@@ -1,8 +1,10 @@
-import fs from "fs/promises";
 import { exec } from "child_process";
+import fs from "fs/promises";
 import inquirer from "inquirer";
 
+//  middleware or utils
 import checkSrcFolder from "./middleware/middleware.js";
+import tailwindConfig from "./utils/tailwindConfig.js";
 
 async function askQuestion() {
   const { projectType } = await inquirer.prompt([
@@ -22,20 +24,7 @@ async function askQuestion() {
     console.log("Initializing tailwindcss config...");
     await exec("npx tailwindcss init");
     console.log("Creating tailwind.config.js...");
-    await fs.writeFile(
-      "./tailwind.config.js",
-      `/** @type {import('tailwindcss').Config} */
-       export default {
-        content: [
-          "./index.html",
-          "./src/**/*.{js,ts,jsx,tsx}",
-        ],
-         theme: {
-           extend: {},
-         },
-         plugins: [],
-       }`
-    );
+    await fs.writeFile("./tailwind.config.js", tailwindConfig);
     console.log("tailwind.config.js created!");
     checkSrcFolder();
   }
