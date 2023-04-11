@@ -1,6 +1,6 @@
 {
   "name": "tail-commander",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A NPM package that setup tailwindCSS within just 1 command  ",
   "type": "module",
   "displayName": "tail-commander ",
@@ -21,7 +21,8 @@
   "author": "Md Kawsar Islam Yeasin",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mdkawsarislam2002/Tail-commander-CLI"},
+    "url": "https://github.com/Mdkawsarislam2002/Tail-commander-CLI"
+  },
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.2.0",
