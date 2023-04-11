@@ -11,12 +11,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^5.2.0",
     "fs-extra": "^11.1.1",
     "inquirer": "^9.1.5",
     "nodemon": "^2.0.22",
-    "yargs": "^17.7.1"
+    "yargs": "^17.7.1",
+    "zx": "^7.2.1"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
     "tailwindcss": "^3.3.1"
   }
 }
