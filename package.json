@@ -1,15 +1,15 @@
 {
-  "name": "tail-commander",
-  "version": "1.0.7",
-  "description": " setup tailwindCSS within just  one command  ",
+  "name": "twind-cli",
+  "version": "0.1.0",
+  "description": "  setup tailwindCSS within just  one command  ",
   "type": "module",
-  "displayName": "tail-commander ",
+  "displayName": "twind-cli ",
   "keywords": [
     "cli",
     "tail",
     "tailwindCSS",
     "commander",
-    "tail-commander",
+    "twind-cli",
     "react",
     "js",
     "vanilla",
@@ -19,15 +19,19 @@
   "main": "./main.js",
   "scripts": {},
   "author": "Md Kawsar Islam Yeasin",
-  
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mdkawsarislam2002/Tail-commander-CLI"
+    "url": "https://github.com/Mdkawsarislam2002/T_Wind-cli"
   },
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.2.0",
     "inquirer": "^9.1.5",
     "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.1"
   }
 }

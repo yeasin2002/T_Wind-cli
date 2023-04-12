@@ -1,15 +1,19 @@
-## tail-commander-cli
+## twind-cli
 
-### Setup Your TailiwndCSS Withing Just 1 Command
-Tailwind is the most popular   CSS Framework but installing and using Tailwind CSS from scratch is a little bit complicated, So using Tail-commander you can setup Tailwind withing a  second. 
+### Setup Your TailwindCSS Withing Just 1 Command
 
-Install Tail-commander CLI 
+Tailwind is the most popular CSS Framework but installing and using Tailwind CSS from scratch is a little bit complicated, So using twind-cli you can setup Tailwind withing a second.
+
+Install twind-cli
+
 ```
-npm i -D tail-commander
+npm i -D twind-cli
 ```
 
 to use with your project use this command in terminal
+
 ```
-npx tail-commander
+npx twind-cli
 ```
+
 It will ask some Questions for project setup
