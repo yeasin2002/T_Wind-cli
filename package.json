@@ -1,12 +1,13 @@
 {
   "name": "tail-commander",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A NPM package that setup tailwindCSS within just 1 command  ",
   "type": "module",
   "displayName": "tail-commander ",
-  "keyword": [
+  "Keywords": [
     "cli",
     "tail",
+    "tailwindCSS",
     "commander",
     "tail-commander",
     "react",
@@ -22,6 +23,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Mdkawsarislam2002/Tail-commander-CLI"
+  },
+  "publishConfig": {
+    "registry": "https://www.npmjs.com/package/tail-commander"
   },
   "license": "ISC",
   "dependencies": {
