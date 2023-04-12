@@ -1,19 +1,22 @@
-import fs from "fs/promises";
-import Chalk from "chalk";
-import { exec } from "child_process";
+import fs from 'fs/promises'
+import Chalk from 'chalk'
+import shell from 'shelljs'
 
-import checkSrcFolder from "../middleware/checkSrcFolder.js";
-import tailwindConfig from "../utils/tailwindConfig.js";
+import checkSrcFolder from '../middleware/checkSrcFolder.js'
+import tailwindConfig from '../utils/tailwindConfig.js'
+import getPackageManager from '../utils/getPackageManager.js'
 
 const ForReact = async () => {
-  console.log(Chalk.blue("Installing tailwindcss..."));
+  console.log(Chalk.blue('Installing tailwindcss...'))
+  const pm = getPackageManager()
+  const installCMD = pm === 'npm' ? 'install' : 'add'
 
-  await exec("npm install -D tailwindcss postcss autoprefixer");
-  await exec("npx tailwindcss init -p");
+  shell.exec(`${pm} ${installCMD} -D tailwindcss postcss autoprefixer`)
+  shell.exec('npx tailwindcss init -p')
 
-  await fs.writeFile("./tailwind.config.js", tailwindConfig);
+  await fs.writeFile('./tailwind.config.js', tailwindConfig)
 
-  checkSrcFolder();
-};
+  checkSrcFolder()
+}
 
-export default ForReact;
+export default ForReact

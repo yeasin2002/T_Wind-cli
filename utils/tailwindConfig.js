@@ -8,6 +8,6 @@ export default {
     extend: {},
   },
   plugins: [],
-}`;
+}`
 
-export default tailwindConfig;
+export default tailwindConfig
