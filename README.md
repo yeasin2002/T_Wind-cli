@@ -1,8 +1,8 @@
 ## twind-cli
 
-### Setup Your TailwindCSS Withing Just 1 Command
+### Setup your TailwindCSS within just 1 Command
 
-Tailwind is the most popular CSS Framework but installing and using Tailwind CSS from scratch is a little bit complicated, So using twind-cli you can setup Tailwind withing a second.
+Tailwind is the most popular CSS Framework but installing and using Tailwind CSS from scratch is a little bit complicated, So using twind-cli you can setup Tailwind within a second.
 
 Install twind-cli
 

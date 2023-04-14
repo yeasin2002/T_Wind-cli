@@ -1,12 +1,11 @@
 {
   "name": "twind-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "  setup tailwindCSS within just  one command  ",
   "type": "module",
   "displayName": "twind-cli ",
   "keywords": [
     "cli",
-    "tail",
     "tailwindCSS",
     "commander",
     "twind-cli",
@@ -28,10 +27,5 @@
     "chalk": "^5.2.0",
     "inquirer": "^9.1.5",
     "shelljs": "^0.8.5"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.3.1"
   }
 }
