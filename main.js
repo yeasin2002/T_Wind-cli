@@ -19,7 +19,8 @@ async function askQuestion() {
 
     switch (projectType) {
       case 'vanilla.js':
-        ForVanilla();
+        // ForVanilla();
+        ForReact();
         break;
 
       case 'react.js':
