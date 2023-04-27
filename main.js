@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-import inquirer from 'inquirer'
-import ForReact from './ProjectBaseSystem/React.js'
-import ForVanilla from './ProjectBaseSystem/Vanilla.js'
-import { getProjectTypeWithAI } from './utils/utils.js'
+import inquirer from 'inquirer';
+import ForReact from './ProjectBaseSystem/React.js';
+import ForVanilla from './ProjectBaseSystem/Vanilla.js';
+import { getProjectTypeWithAI } from './utils/utils.js';
 
 async function askQuestion() {
   try {
@@ -15,20 +15,23 @@ async function askQuestion() {
         choices: ['vanilla.js', 'react.js'],
         default: getProjectTypeWithAI('./package.json'),
       },
-    ])
+    ]);
 
     switch (projectType) {
       case 'vanilla.js':
-        ForVanilla()
-        break
+        ForVanilla();
+        break;
 
       case 'react.js':
-        ForReact()
-        break
+        ForReact();
+        break;
+
+      default:
+        console.log('Please select a valid option');
     }
   } catch (error) {
-    console.log(error)
+    console.log(error);
   }
 }
 
-askQuestion()
+askQuestion();
