@@ -1,4 +1,5 @@
-const TailwindDirectives = `@tailwind base;
+const TailwindDirectives = `
+ @tailwind base;
 @tailwind components;
 @tailwind utilities;`;
 
