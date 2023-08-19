@@ -1,7 +1,11 @@
 #!/usr/bin/env zx
+
 import "zx/globals";
-$.verbose = false;
+import { spinner } from "@clack/prompts";
+import Questions from "./utils/Questions.js";
 
-let flags = ["--react", "--vanilla"];
+// $.verbose = false;
 
-console.log(flags);
+const answer = await Questions();
+
+console.log(answer);

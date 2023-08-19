@@ -17,7 +17,8 @@
     "front-end"
   ],
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "dev": ""
   },
   "author": "Md Kawsar Islam Yeasin",
   "repository": {
@@ -26,7 +27,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^9.1.5",
+    "@clack/prompts": "^0.7.0",
     "zx": "^7.2.2"
   }
 }
