@@ -1,9 +1,9 @@
 {
   "name": "twind-cli",
   "version": "0.1.1",
-  "description": "  setup tailwindCSS within just  one command  ",
+  "description": "setup tailwindCSS within just  one command  ",
   "type": "module",
-  "displayName": "twind-cli ",
+  "displayName": "twind-cli",
   "bin": "./main.mjs",
   "main": "./main.mjs",
   "keywords": [
@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "dev": ""
+    "dev": "node main.mjs"
   },
   "author": "Md Kawsar Islam Yeasin",
   "repository": {

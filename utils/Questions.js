@@ -25,7 +25,7 @@ const Questions = async () => {
       //  get css root file path
       cssFilePath: () =>
         p.text({
-          message: "Provide your root  CSS file path ",
+          message: `Provide your root  CSS file path `,
           placeholder: "./",
           initialValue: "./",
         }),
