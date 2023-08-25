@@ -23,16 +23,16 @@ const Questions = async () => {
           required: false,
         }),
       //  get css root file path
-      cssFilePath: () =>
+      cssFilePath: ({ results }) =>
         p.text({
           message: `Provide your root  CSS file path `,
-          placeholder: "./",
-          initialValue: "./",
+          initialValue:
+            results.ProjectType === "react" ? "./src/style.css" : "./",
         }),
     },
     {
       onCancel: ({ errLog }) => {
-        p.cancel("Operation cancelled.", errLog);
+        p.cancel("Operation cancelled : ", errLog);
         process.exit(0);
       },
     }

@@ -1,6 +1,7 @@
-#!/usr/bin/env zx
-import { spinner } from "@clack/prompts";
-import "zx/globals";
+#!/usr/bin/env node
+
+import chalk from "chalk";
+import { intro, outro } from "@clack/prompts";
 import Questions from "./utils/Questions.js";
 
 // Project Type
@@ -11,13 +12,12 @@ const answer = await Questions();
 
 switch (answer.ProjectType) {
   case "vanilla":
-    Vanilla(answer);
+    await Vanilla(answer);
     break;
   case "react":
-    React(answer);
+    await React(answer);
     break;
   default:
     console.log(chalk.bgRed.white("something went wrong"));
     process.exit(0);
-    break;
 }
