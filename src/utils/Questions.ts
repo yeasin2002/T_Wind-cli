@@ -5,12 +5,17 @@ const Questions = async () => {
     {
       ProjectType: () =>
         p.select({
-          message: `What is your project type? ?`,
+          message: `What is your project type`,
           options: [
+            //  @ts-ignore
             { value: "vanilla", label: "Vanilla" },
+            //  @ts-ignore
             { value: "react", label: "React.js - vite" },
+            //  @ts-ignore
             { value: "vue", label: "Vue.js - vite" },
+            //  @ts-ignore
             { value: "angular", label: "Angular.js " },
+            //  @ts-ignore
             { value: "svelte", label: "Svelte.js" },
           ],
         }),
@@ -36,8 +41,8 @@ const Questions = async () => {
         }),
     },
     {
-      onCancel: ({ errLog }) => {
-        p.cancel("Operation cancelled : ", errLog);
+      onCancel: ({ results }) => {
+        p.cancel(`Operation cancelled ${results}`);
         process.exit(0);
       },
     }

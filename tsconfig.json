@@ -1,0 +1,17 @@
+{
+  "display": "Node LTS",
+  "_version": "18.1.0",
+  "compilerOptions": {
+    "lib": ["es2023"],
+    "outDir": "dist",
+    "module": "nodenext",
+    "target": "es2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node16"
+  },
+  "include": ["src/**/*", "index.mts"],
+  "extends": "@tsconfig/node-lts/tsconfig.json"
+}

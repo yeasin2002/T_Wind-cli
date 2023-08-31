@@ -8,11 +8,11 @@ import { spinner } from "@clack/prompts";
 const writeFileAwait = promisify(writeFile);
 
 //  local imports
-import { tailwindConfig, TailwindDirectives } from "../../utils/DataStrings.js";
-import execute from "../../utils/execute";
+import { tailwindConfig, TailwindDirectives } from "../utils/DataStrings.js";
+import execute from "../utils/execute.js";
 import path from "path";
 
-const React = async (answer) => {
+const React = async (answer: any) => {
   console.log(answer);
   const spin = spinner();
   try {
@@ -31,7 +31,7 @@ const React = async (answer) => {
     //!   process ended
     spin.stop("tailwind installed");
     process.exit(0);
-  } catch (error) {
+  } catch (error: any) {
     console.log(chalk.bgRed.white(error.message));
     console.log(chalk.blue(error));
     process.exit(0);
