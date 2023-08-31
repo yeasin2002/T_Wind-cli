@@ -1,12 +1,18 @@
 #!/usr/bin/env node
 
 import chalk from "chalk";
-import { intro, outro } from "@clack/prompts";
+import shell from "shelljs";
 import Questions from "./utils/Questions.js";
 
 // Project Type
 import Vanilla from "./lib/projectTypes/Vanilla.js";
 import React from "./lib/projectTypes/React.js";
+
+const data = shell.test("-f", "tailwind.config.js");
+if (data) {
+  console.log(chalk.bgRed.white("Already  a tailwind.config.js file exist "));
+  process.exit(0);
+}
 
 const answer = await Questions();
 

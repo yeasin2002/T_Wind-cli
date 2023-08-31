@@ -9,6 +9,9 @@ const Questions = async () => {
           options: [
             { value: "vanilla", label: "Vanilla" },
             { value: "react", label: "React.js - vite" },
+            { value: "vue", label: "Vue.js - vite" },
+            { value: "angular", label: "Angular.js " },
+            { value: "svelte", label: "Svelte.js" },
           ],
         }),
       //  adding component LIbrary
@@ -27,7 +30,9 @@ const Questions = async () => {
         p.text({
           message: `Provide your root  CSS file path `,
           initialValue:
-            results.ProjectType === "react" ? "./src/style.css" : "./",
+            results.ProjectType === ("react" || "vue" || "svelte" || "angular")
+              ? "./src/index.css"
+              : "./",
         }),
     },
     {
