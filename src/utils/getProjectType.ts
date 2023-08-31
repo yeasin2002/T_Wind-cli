@@ -1,6 +1,6 @@
 import * as fs from "fs";
 
-export const readJSON = (path) => {
+export const readJSON = (path: string) => {
   try {
     const file = fs.readFileSync(path, "utf-8");
     return JSON.parse(file);
@@ -9,7 +9,7 @@ export const readJSON = (path) => {
   }
 };
 
-export const getProjectType = (path) => {
+export const getProjectType = (path: string) => {
   const data = readJSON(path);
 
   if (data?.dependencies?.react) return "react.js";
