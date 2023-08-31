@@ -41,8 +41,8 @@ const Questions = async () => {
         }),
     },
     {
-      onCancel: ({ results }) => {
-        p.cancel(`Operation cancelled ${results}`);
+      onCancel: () => {
+        p.cancel(`Operation cancelled `);
         process.exit(0);
       },
     }

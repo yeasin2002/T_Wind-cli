@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "dev": "tsc -w",
-    "lint": "eslint .",
+    "lint": "eslint src/",
     "link": "yarn unlink --global twind-cli &&  yarn link --global twind-cli "
   },
   "author": "Md Kawsar Islam Yeasin",
@@ -32,12 +32,17 @@
   "dependencies": {
     "@clack/prompts": "^0.7.0",
     "chalk": "^5.3.0",
+    "fs-extra": "^11.1.1",
     "shelljs": "^0.8.5"
   },
   "devDependencies": {
     "@tsconfig/node-lts": "^18.12.5",
     "@types/node": "^20.5.7",
     "@types/shelljs": "^0.8.12",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "eslint": "^8.48.0",
+    "eslint-plugin-import": "^2.28.1",
     "typescript": "^5.2.2"
   }
 }

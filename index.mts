@@ -15,6 +15,7 @@ if (isTailwindConfigExists) {
 }
 
 const answer = await Questions();
+
 console.log(answer);
 
 switch (answer.ProjectType) {
